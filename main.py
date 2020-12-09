@@ -36,11 +36,10 @@ for el in cycle(g):
          break
      print(el)
      e += 1
-
 #задание 7
 n = int(input("Введите n: "))
 u = [i for i in range(1,n+1)]
 def factorial(u):
-    list_4 = [el*el for el in u]
+    list_4 = [el*(el+2) for el in u]
     yield list_4
 print(list(factorial(u)))
