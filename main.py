@@ -10,13 +10,13 @@ total_list = [el for i, el in enumerate(random_list) if i > 0 and random_list[i]
 print(total_list)
 #задание 3
 total_range = print([el for el in range(20, 241) if el % 20 == 0 or el % 21 == 0])
-#задание 4 вариант 1
+#задание 4 вариант1
 numbers_list = [3, 4, 5, 3, 4 , 5, 33, 34, 87, 33, 49, 88, 74]
 numbers_list_new = [el for el in numbers_list if numbers_list.count(el) <= 1]
 print(numbers_list_new)
 import math
 list_form = print(math.prod([el for el in range(100, 1001) if el % 2 == 0]))
-#задание 4 вариант 2
+#задание 4 вариант2
 from functools import reduce
 def list_new(prev_el, el):
     return prev_el*el
